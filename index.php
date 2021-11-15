@@ -40,7 +40,7 @@
             <a href="/exersices/exo9/exo9.html">Exo9</a>
         </li>
         <li>
-            <a href="/exersices/exo9/exo10.html">Exo10</a>
+            <a href="/exersices/exo10/exo10.html">Exo10</a>
         </li>
     </ul>
 </body>
