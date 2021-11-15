@@ -36,6 +36,12 @@
         <li>
             <a href="/exersices/exo8/exo8.html">Exo8</a>
         </li>
+        <li>
+            <a href="/exersices/exo9/exo9.html">Exo9</a>
+        </li>
+        <li>
+            <a href="/exersices/exo9/exo10.html">Exo10</a>
+        </li>
     </ul>
 </body>
 </html>
