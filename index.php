@@ -13,35 +13,49 @@
     <h4>Liste des exercices:</h4>
     <ul>
         <li>
-            <a href="/exersices/exo1/exo1.html">Exo1</a>
+            <a href="/exersices/exo01/exo1.html">Exo1</a>
         </li>
         <li>
-            <a href="/exersices/exo2/exo2.html">Exo2</a>
+            <a href="/exersices/exo02/exo2.html">Exo2</a>
         </li>
         <li>
-            <a href="/exersices/exo3/exo3.html">Exo3</a>
+            <a href="/exersices/exo03/exo3.html">Exo3</a>
         </li>
         <li>
-            <a href="/exersices/exo4/exo4.html">Exo4</a>
+            <a href="/exersices/exo04/exo4.html">Exo4</a>
         </li>
         <li>
-            <a href="/exersices/exo5/exo5.html">Exo5</a>
+            <a href="/exersices/exo05/exo5.html">Exo5</a>
         </li>
         <li>
-            <a href="/exersices/exo6/exo6.html">Exo6</a>
+            <a href="/exersices/exo06/exo6.html">Exo6</a>
         </li>
         <li>
-            <a href="/exersices/exo7/exo7.html">Exo7</a>
+            <a href="/exersices/exo07/exo7.html">Exo7</a>
         </li>
         <li>
-            <a href="/exersices/exo8/exo8.html">Exo8</a>
+            <a href="/exersices/exo08/exo8.html">Exo8</a>
         </li>
         <li>
-            <a href="/exersices/exo9/exo9.html">Exo9</a>
+            <a href="/exersices/exo09/exo9.html">Exo9</a>
         </li>
         <li>
             <a href="/exersices/exo10/exo10.html">Exo10</a>
         </li>
+        <li>
+            <a href="/exersices/exo11/exo11.html">Exo11</a>
+        </li>
+        <li>
+            <a href="/exersices/exo12/exo12.html">Exo12</a>
+        </li>
+        <li>
+            <a href="/exersices/exo13/exo13.html">Exo13</a>
+        </li>
+    </ul>
+
+    <h4>En plus :</h4>
+    <ul>
+        <li><a href="https://github.com/Manapyzz/php-basic/tree/master/exersices/train-array">Entrainement avec les tableaux (array)</a></li>
     </ul>
 </body>
 </html>

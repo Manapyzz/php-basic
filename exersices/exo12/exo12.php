@@ -8,10 +8,6 @@ try {
             PDO::MYSQL_ATTR_FOUND_ROWS => true
         ]
     );
-
-    if ($pdo) {
-        echo "Connected to the database successfully!";
-    }
 } catch (PDOException $exception) {
     echo $exception->getMessage();
 }
@@ -43,4 +39,17 @@ try {
 //
 //$lastArticleId = $pdo->lastInsertId();
 
+
+// Update a element with his id
+//$statement = $pdo->prepare('UPDATE `article` SET `title`= :title WHERE id = :id');
+//$statement->execute([
+//   'title' => 'title updated from php',
+//   'id' => 11
+//]);
+
+// Delete one element by his id
+//$statement = $pdo->prepare('DELETE FROM `article` WHERE id = :id');
+//$statement->execute([
+//    'id' => 7
+//]);
 
