@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>View of one book:</h1>
+    <h1>{{ book.title }}:</h1>
+    <b>Description:</b> {{ book.description }}<br><br>
+    <b>Author:</b> {{ book.author }}<br><br>
+
+    <a href="/books/{{ book.id }}/update">Edit</a>
+    <form action="/books/{{ book.id }}/delete" method="POST">
+        <input type="submit" value="Delete">
+    </form>
 </body>
 </html>
