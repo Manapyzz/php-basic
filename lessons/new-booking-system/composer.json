@@ -1,0 +1,22 @@
+{
+    "name": "alexandrepicard/new-booking-system",
+    "autoload": {
+        "psr-4": {
+            "NewBookingSystem\\": "src/",
+            "Framework\\": "framework/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manapyzz",
+            "email": "alexandreb.picard@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "twig/twig": "^3.3"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
