@@ -1,0 +1,20 @@
+{
+    "name": "alexandrepicard/mvc",
+    "autoload": {
+        "psr-4": {
+            "Mvc\\": "src/",
+            "Config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manapyzz",
+            "email": "alexandreb.picard@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "^1.6",
+        "twig/twig": "^2.0",
+        "symfony/var-dumper": "^6.0"
+    }
+}

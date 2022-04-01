@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>UploadedMe</h1>
+    <form action="/posts" method="POST" enctype="multipart/form-data">
+        <label for="image">Image:</label>
+        <input type="file" name="image">
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+        <input type="submit" value="Send my post">
+    </form>
+
+    <input id="search" type="text" placeholder="search a little cat">
+
+    <div id="image-container" style="display: inline-block; margin-top: 100px;">
+        {% for post in posts %}
+            <a href="/posts/{{ post.id }}"><img src="http://instawish.localhost/images/{{ post.image_name }}" alt="{{ post.title }}"></a>
+        {% endfor %}
+    </div>
+
+    <script>
+        let searchInput = document.querySelector('#search');
+        let imageContainer = document.querySelector('#image-container');
+
+        searchInput.addEventListener('keyup', function () {
+            fetch('http://instawish.localhost/api/search', {
+                method: 'POST',
+                body: JSON.stringify({search: this.value})
+            }).then(res => res.json())
+                .then(res => {
+                    if (res.status === 200)
+                    {
+                        imageContainer.innerHTML = '';
+
+                        res.data.forEach(post => {
+                            let template = `<a href="/posts/${post.id}"><img src="http://instawish.localhost/images/${post.image_name}" alt="${post.title}"></a>`
+                            imageContainer.innerHTML += template;
+                        })
+                    }
+                });
+        })
+    </script>
+</body>
+</html>
